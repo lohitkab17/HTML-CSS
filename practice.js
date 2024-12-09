@@ -88,6 +88,143 @@ const exercises = {
         }
     ],
 
+    div: [
+        {
+            name: "Example of container",
+            code: `
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <title>Simple Webpage</title>
+                </head>
+                <body>
+                    <h1>Hello, World!</h1>
+                    <p>This is a simple webpage.</p>
+                </body>
+                </html>
+            `,
+            output: `
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>YouTube.com Clone</title>
+
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+                <style>
+                p {
+                    font-family: Roboto, Arial;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+
+                .thumbnail {
+                    width: 300px;
+                    display: block;
+                }
+
+                .search-bar {
+                    display: block;
+                }
+
+                .video-title {
+                    margin-top: 0;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    margin-bottom: 12px;
+                }
+
+                .video-preview {
+                    width: 300px;
+                    display: inline-block;
+                    vertical-align: top;
+                    margin-right: 15px;
+                }
+
+                .channel-picture {
+                    display: inline-block;
+                    width: 50px;
+                    vertical-align: top;
+                }
+
+                .video-info {
+                    display: inline-block;
+                    width: 200px;
+                }
+
+                .profile-picture {
+                    width: 40px;
+                    border-radius: 50px;
+                }
+
+                .thumbnail-row {
+                    margin-bottom: 12px;
+                }
+
+                .video-author,
+                .video-stats {
+                    font-size: 12px;
+                    color: rgb(96, 96, 96);
+                }
+
+                .video-author {
+                    margin-bottom: 4px;
+                }
+                </style>
+            </head>
+            <body>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="thumbnail-1.webp">
+                    </div>
+                <div>
+                    <div class="channel-picture">
+                    <img class="profile-picture" src="channel-1.jpeg">
+                    </div>
+                    <div class="video-info">
+                    <p class="video-title">
+                        Talking Tech and AI with Google CEO Sundar Pichai!
+                    </p>
+                    <p class="video-author">
+                        Marques Brownlee
+                    </p>
+                    <p class="video-stats">
+                        3.4M views &#183; 6 months ago
+                    </p>
+                    </div>
+                </div>
+                </div>
+
+                <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnail-2.webp">
+                </div>
+                <div>
+                    <div class="channel-picture">
+                    <img class="profile-picture" src="channel-2.jpeg">
+                    </div>
+                    <div class="video-info">
+                    <p class="video-title">
+                        Try Not To Laugh Challenge #9
+                    </p>
+                    <p class="video-author">
+                        Markiplier
+                    </p>
+                    <p class="video-stats">
+                        19M views &#183; 4 years ago
+                    </p>
+                    </div>
+                </div>
+                </div>
+            </body>
+            </html>
+            `
+        }
+    ],
+
     grid: [
         {
             name: "Working with GRID",
@@ -798,9 +935,7 @@ const exercises = {
             <span class="buy">Buy</span>
             </p>
             `
-        },
-
-        
+        },       
         {
             name: "Text Styling and practicing 2",
             code: `
@@ -861,9 +996,7 @@ const exercises = {
             <span class="after-hours-change">-1.61 (0.15%)</span>
             </p>
             `
-        },
-
-        
+        },      
         {
             name: "Text Styling and practicing 3",
             code: `
@@ -924,7 +1057,6 @@ const exercises = {
             </p>
             `
         },
-
         {
             name: "Create a button with CSS",
             code: `
@@ -1523,6 +1655,7 @@ const exercises = {
     ]
 };
 
+// For Responsive Navigation Bar
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
 

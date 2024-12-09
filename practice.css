@@ -6,10 +6,15 @@
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
+/* Default Light Mode */
 body {
+    margin: 0;
     line-height: 1.6;
-    color: #333;
-    background-color: #fff;
+    /* background-color: #ffffff; */
+    background: linear-gradient(180deg, #E0FCFF 0%, #FFFFFF 100%);
+
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 /* Container */
@@ -35,6 +40,8 @@ body {
 /* Navbar */
 .navbar {
     background-color: #fff;
+    /* background: linear-gradient(180deg, #E0FCFF 0%, #FFFFFF 100%); */
+
     border-bottom: 1px solid #ddd;
     position: fixed;
     width: 100%;
@@ -151,7 +158,9 @@ body {
 }
 
 .language {
-    background-color: #0bada7;
+    /* background-color: #0bada7; */
+    background: linear-gradient(90deg, #00D4FF 0%, #0AF59D 100%);
+
     color: white;
     padding: 15px 30px;
     border-radius: 5px;
@@ -161,7 +170,9 @@ body {
 }
 
 .language:hover {
-    background-color: #108b96;
+    /* background: #108b96; */
+    background: linear-gradient(90deg, #0AF59D 0%, #00D4FF 100%);
+
 }
 
 /* Exercises Section */
@@ -208,7 +219,8 @@ body {
 .footer {
     text-align: center;
     padding: 20px;
-    background-color: #0bada7;
+    /* background-color: #0bada7; */
+    background: linear-gradient(90deg, #00D4FF 0%, #0AF59D 100%);
     color: white;
 }
 
